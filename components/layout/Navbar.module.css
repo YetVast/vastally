@@ -1,0 +1,156 @@
+.header {
+  border-bottom: 1px solid var(--border);
+  background-color: var(--card);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brandLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--foreground);
+}
+
+.brandLogo {
+  width: 32px;
+  height: 32px;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+}
+
+.brandSub {
+  font-size: 0.7rem;
+  color: var(--muted-foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.navLink {
+  color: var(--foreground);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius-sm);
+  transition: background-color 0.15s ease;
+}
+
+.navLink:hover {
+  background-color: var(--secondary);
+}
+
+.activeNavLink {
+  color: var(--primary);
+  font-weight: 600;
+  background-color: var(--secondary);
+}
+
+.authControls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.userBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.6rem;
+  background-color: var(--muted);
+  border-radius: var(--radius-sm);
+  color: var(--foreground);
+}
+
+.roleTag {
+  font-size: 0.65rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.roleAdmin {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.roleSeeker {
+  background-color: var(--border);
+  color: var(--foreground);
+}
+
+.signInButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.signInButton:hover {
+  opacity: 0.9;
+}
+
+.signOutButton {
+  padding: 0.4rem 0.8rem;
+  background-color: transparent;
+  color: var(--muted-foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.signOutButton:hover {
+  color: var(--destructive);
+  border-color: var(--destructive);
+}

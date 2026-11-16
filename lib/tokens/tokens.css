@@ -1,0 +1,72 @@
+:root {
+  /* YVS Canonical Brand Colors */
+  --yvs-yellow: #FFFF11;
+  --yvs-indigo: #4B0084;
+
+  /* YVS Light Theme (Default) */
+  --background: #FFFFFF;
+  --foreground: #17121C;
+  --card: #FFFFFF;
+  --card-foreground: #17121C;
+  --muted: #F4F1F6;
+  --muted-foreground: #655C6B;
+  --border: #DDD6E2;
+  --input: #DDD6E2;
+  --primary: #4B0084;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F1EDF4;
+  --secondary-foreground: #4B0084;
+  --accent: #FFFF11;
+  --accent-foreground: #160020;
+  --destructive: #C62828;
+  --destructive-foreground: #FFFFFF;
+  --success: #16803C;
+  --success-foreground: #FFFFFF;
+  --warning: #A15C00;
+  --warning-foreground: #FFFFFF;
+  --ring: #4B0084;
+  --brand-border: #4B0084;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Spacing & Radii */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(23, 18, 28, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(23, 18, 28, 0.08), 0 2px 4px -1px rgba(23, 18, 28, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #09060D;
+    --foreground: #F8F5FA;
+    --card: #100B16;
+    --card-foreground: #F8F5FA;
+    --muted: #17121F;
+    --muted-foreground: #B9AFBF;
+    --border: #3A2450;
+    --input: #3A2450;
+    --primary: #FFFF11;
+    --primary-foreground: #160020;
+    --secondary: #21152A;
+    --secondary-foreground: #F8F5FA;
+    --accent: #FFFF11;
+    --accent-foreground: #160020;
+    --destructive: #FF6B6B;
+    --destructive-foreground: #240006;
+    --success: #55D98A;
+    --success-foreground: #06180D;
+    --warning: #FFC44D;
+    --warning-foreground: #241400;
+    --ring: #FFFF11;
+    --brand-border: #4B0084;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  }
+}

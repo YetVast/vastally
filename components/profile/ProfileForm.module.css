@@ -1,0 +1,421 @@
+.formContainer {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.formHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+.titleArea {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  margin: 0;
+}
+
+.statusArea {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badgePending {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+.badgeVerified {
+  background-color: rgba(22, 128, 60, 0.12);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.badgeIgnored {
+  background-color: rgba(198, 40, 40, 0.12);
+  color: var(--destructive);
+  border: 1px solid var(--destructive);
+}
+
+.tagAdmin {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.tagVerified {
+  background-color: var(--success);
+  color: var(--success-foreground);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.metaInfo {
+  background-color: var(--muted);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.825rem;
+  color: var(--muted-foreground);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.metaItem {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.metaLabel {
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.section {
+  margin-bottom: 1.75rem;
+}
+
+.fieldLabel {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--foreground);
+}
+
+.required {
+  color: var(--destructive);
+  margin-left: 0.2rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-md);
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.15s ease;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--ring);
+}
+
+.inputDisabled {
+  background-color: var(--muted);
+  color: var(--muted-foreground);
+  cursor: not-allowed;
+}
+
+.fieldError {
+  font-size: 0.8rem;
+  color: var(--destructive);
+  margin-top: 0.35rem;
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.detailRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem;
+  background-color: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.detailRowSaved {
+  background-color: var(--background);
+  border-color: var(--border);
+}
+
+.detailLabelSelect {
+  flex: 0 0 210px;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-md);
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 0.875rem;
+  font-family: inherit;
+}
+
+.detailLabelInput {
+  flex: 0 0 210px;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-md);
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 0.875rem;
+  font-family: inherit;
+}
+
+.detailValueInput {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-md);
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 0.875rem;
+  font-family: inherit;
+}
+
+.rowActions {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.tickButton {
+  padding: 0.5rem;
+  background-color: var(--success);
+  color: var(--success-foreground);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s ease;
+}
+
+.tickButton:disabled {
+  background-color: var(--muted);
+  color: var(--muted-foreground);
+  cursor: not-allowed;
+}
+
+.removeButton {
+  padding: 0.5rem;
+  background-color: transparent;
+  color: var(--muted-foreground);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.removeButton:hover {
+  color: var(--destructive);
+  background-color: rgba(198, 40, 40, 0.08);
+}
+
+.addDetailButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px dashed var(--brand-border);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  justify-content: center;
+  transition: background-color 0.15s ease;
+}
+
+.addDetailButton:hover {
+  background-color: var(--secondary);
+}
+
+.formFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.primaryButton {
+  padding: 0.75rem 1.75rem;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.15s ease;
+}
+
+.primaryButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.secondaryButton {
+  padding: 0.65rem 1.25rem;
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.15s ease;
+}
+
+.secondaryButton:hover {
+  background-color: var(--border);
+}
+
+.dropdownWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.deleteOption {
+  padding: 0.5rem 1rem;
+  color: var(--destructive);
+  background-color: transparent;
+  border: 1px solid var(--destructive);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.15s ease;
+}
+
+.deleteOption:hover {
+  background-color: rgba(198, 40, 40, 0.08);
+}
+
+.alertBox {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.alertSuccess {
+  background-color: rgba(22, 128, 60, 0.1);
+  border: 1px solid var(--success);
+  color: var(--success);
+}
+
+.alertError {
+  background-color: rgba(198, 40, 40, 0.1);
+  border: 1px solid var(--destructive);
+  color: var(--destructive);
+}
+
+/* Modal styles for delete confirmation */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modalContent {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  max-width: 440px;
+  width: 90%;
+  box-shadow: var(--shadow-md);
+}
+
+.modalTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0 0 0.5rem 0;
+}
+
+.modalBody {
+  font-size: 0.9rem;
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.dangerButton {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--destructive);
+  color: var(--destructive-foreground);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}

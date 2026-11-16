@@ -1,0 +1,13 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // VastAlliance V0 Security Policy
+    // Client-side direct reads and writes to Firestore are forbidden.
+    // All profile queries and administrative mutations are executed strictly
+    // via Firebase Admin SDK on the Next.js server authority.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

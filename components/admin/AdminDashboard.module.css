@@ -1,0 +1,424 @@
+.dashboardContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.headerArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.titleArea h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0 0 0.25rem 0;
+}
+
+.titleArea p {
+  font-size: 0.9rem;
+  color: var(--muted-foreground);
+  margin: 0;
+}
+
+.addProfileButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.addProfileButton:hover {
+  opacity: 0.9;
+}
+
+/* Stats Cards Grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.statValue {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted-foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Filters & Search Toolbar */
+.toolbar {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 250px;
+  background-color: var(--background);
+  border: 1px solid var(--input);
+  border-radius: var(--radius-md);
+  padding: 0.4rem 0.75rem;
+}
+
+.searchInput {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 0.9rem;
+  color: var(--foreground);
+  outline: none;
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filterSelect {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-md);
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 0.85rem;
+  font-family: inherit;
+  outline: none;
+}
+
+/* Table Area */
+.tableContainer {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.table th {
+  background-color: var(--muted);
+  color: var(--foreground);
+  padding: 0.85rem 1rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+}
+
+.table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--foreground);
+  vertical-align: middle;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tr:hover {
+  background-color: var(--secondary);
+}
+
+.profileIdText {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--primary);
+}
+
+.badge {
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.badgePending {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+.badgeVerified {
+  background-color: rgba(22, 128, 60, 0.12);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.badgeIgnored {
+  background-color: rgba(198, 40, 40, 0.12);
+  color: var(--destructive);
+  border: 1px solid var(--destructive);
+}
+
+.tagsCell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.tagPill {
+  font-size: 0.68rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+
+.tagAdmin {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.tagVerified {
+  background-color: var(--success);
+  color: var(--success-foreground);
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.iconBtn {
+  padding: 0.4rem;
+  background-color: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--foreground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.iconBtn:hover {
+  background-color: var(--secondary);
+  border-color: var(--primary);
+}
+
+.iconBtnVerify:hover {
+  color: var(--success);
+  border-color: var(--success);
+}
+
+.iconBtnIgnore:hover {
+  color: var(--destructive);
+  border-color: var(--destructive);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pageInfo {
+  font-size: 0.85rem;
+  color: var(--muted-foreground);
+}
+
+.pageControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pageBtn {
+  padding: 0.4rem 0.8rem;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: var(--foreground);
+  transition: all 0.15s ease;
+}
+
+.pageBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pageBtn:hover:not(:disabled) {
+  background-color: var(--secondary);
+}
+
+/* Modal Overlay & Modal Window */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.modalContent {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: var(--shadow-md);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modalTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: var(--foreground);
+}
+
+.modalSubtitle {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  margin: 0 0 1.25rem 0;
+}
+
+.modalFormGroup {
+  margin-bottom: 1.25rem;
+}
+
+.modalLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--foreground);
+}
+
+.modalSelect,
+.modalTextarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-md);
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: inherit;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.modalTextarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.auditHistoryArea {
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.auditItem {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+}
+
+.auditItem:last-child {
+  border-bottom: none;
+}
+
+.auditMeta {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.2rem;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.primaryBtn {
+  padding: 0.6rem 1.25rem;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondaryBtn {
+  padding: 0.6rem 1.25rem;
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+}
